@@ -30,7 +30,7 @@ public class ProducerDemo {
         // send data - async operation
         producer.send(producerRecord);
 
-        // flush data - async also
+        // flush data - synchronous
         producer.flush();
 
         // flush and close producer

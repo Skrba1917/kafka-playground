@@ -26,7 +26,7 @@ public class ConsumerDemoCooperative {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupId);
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         properties.setProperty(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG, CooperativeStickyAssignor.class.getName());
-        
+
 
         // create consumer
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);

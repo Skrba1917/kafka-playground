@@ -12,7 +12,7 @@ import java.util.Properties;
 public class ProducerDemo {
     private static final Logger log = LoggerFactory.getLogger(ProducerDemo.class.getSimpleName());
     public static void main(String[] args) {
-        log.info("Hello world!");
+        log.info("I am a Kafka Producer!");
 
         // create producer properties
         Properties properties = new Properties();
